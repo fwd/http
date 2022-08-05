@@ -603,34 +603,3 @@ We provide an example systemd unit file. The config file is set to /etc/http-mas
 * `systemctl start/stop/restart http-master`
 * `systemctl enable http-master` - auto-start
 * `systemctl reload http-master` - reload config with `kill -USR1`
-
-## Upstart
-
-Also provided is `http-master-upstart.conf` which can be used with Upstart. As above, the config file is set to /etc/http-master/http-master.conf by default. Copy `http-master-upstart.conf` to `/etc/init/http-master.conf` to use it.
-
-* `service http-master start`
-* `service http-master stop`
-* `service http-master restart`
-
-## Contributors
-
-* Damian Kaczmarek <damian@codecharm.co.uk>
-* Damian Nowak <nowaker@virtkick.com>
-* Sergey Zarouski <sergey@webuniverse.io>
-
-## Sponsors
-
-[eeGeo](http://sdk.eegeo.com/) - basic HTTP authentication against htpasswd file [#32](https://github.com/CodeCharmLtd/http-master/issues/32)
-
-Please open an issue if you would like a specific feature to be implemented and sponsored.
-
-Example sponsored features could include:
-* Automatically lazy-starting FastCGI apps such as PHP without overhead of running separate Apache and with better security handling.
-* Home directory support
-* Some form of .htaccess support
-* Additional logging formats
-
-## License
-Copyright (c) 2013-2015 [Virtkick, Inc.](https://www.virtkick.com/)
-
-Licensed under the MIT license, see `LICENSE` for details.
